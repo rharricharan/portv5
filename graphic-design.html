@@ -26,6 +26,10 @@
             <div class="block"></div>
         </div>
     </div>
+
+    <!-- Cursor Object -->
+    <div class="custom-cursor"><span class="cursor-text">(scroll)</span></div>
+
     <div class="container">
         <nav>
             <p>ryan harricharan<span>graphic design</span></p>
@@ -62,19 +66,16 @@
         </div>
         <div class="menu-selector">
             <div class="menu-links">
-                <a class="menu-link" href="./index.html">
+                <a class="menu-link home-item" href="./index.html" data-text="where you started">
                     <h3>home</h3>
                 </a>
-                <a class="menu-link">
-                    <h3>about</h3>
-                </a>
-                <a class="menu-link">
+                <a class="menu-link work-item" href="./work.html" data-text="selected projects (4)">
                     <h3>work</h3>
                 </a>
-                <a class="menu-link" href="./graphic-design.html">
+                <a class="menu-link exp-item" href="./graphic-design.html" data-text="work experience">
                     <h3>experience</h3>
                 </a>
-                <a class="contact-link">
+                <a class="contact-link contact-item" href="./contact.html" data-text="open to full-time/freelance">
                     <h3>let's talk</h3>
                 </a>
             </div>
@@ -83,6 +84,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./graphic.js"></script>
     <script src="./transition.js"></script>
+    <script src="cursorGraphic.js"></script>
 </body>
 
 </html>
