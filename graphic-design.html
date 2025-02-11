@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Minimap | Codegrid</title>
+    <title>ryan harricharan | archive</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="graphic.css" />
 </head>
@@ -26,6 +26,8 @@
             <div class="block"></div>
         </div>
     </div>
+
+    <audio id="hoverSound" src="sounds/mechanical.wav"></audio>
 
     <!-- Cursor Object -->
     <div class="custom-cursor"><span class="cursor-text">(scroll)</span></div>
@@ -66,17 +68,17 @@
         </div>
         <div class="menu-selector">
             <div class="menu-links">
-                <a class="menu-link home-item" href="./index.html" data-text="selected projects (4)">
+                <a class="menu-link home-item sound" href="./index.html" data-text="selected projects (4)">
                     <h3>work</h3>
                 </a>
-                <a class="menu-link work-item" href="./graphic-design.html" data-text="you're here">
+                <a class="menu-link work-item sound" href="./graphic-design.html" data-text="you're here">
                     <div class="selector-dot"></div>
                     <h3>archive</h3>
                 </a>
-                <a class="menu-link exp-item" href="#" data-text="work experience">
+                <a class="menu-link exp-item sound" href="#" data-text="work experience">
                     <h3>experience</h3>
                 </a>
-                <a class="contact-link contact-item" href="./contact.html" data-text="open to full-time/freelance">
+                <a class="contact-link contact-item sound" href="./contact.html" data-text="open to full-time/freelance">
                     <h3>let's talk</h3>
                 </a>
             </div>
@@ -86,6 +88,7 @@
     <script src="./graphic.js"></script>
     <script src="./transition.js"></script>
     <script src="cursorGraphic.js"></script>
+    <script src="hoverSoundInteraction.js"></script>
 </body>
 
 </html>
