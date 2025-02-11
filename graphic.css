@@ -233,6 +233,39 @@ span {
     gap: 6px;
 }
 
+.home-item {
+    transition: all 0.1s ease;
+}
+
+.work-item {
+    transition: all 0.1s ease;
+}
+
+.exp-item {
+    transition: all 0.1s ease;
+}
+
+.home-item:hover {
+    border-radius: 3px;
+}
+
+.exp-item:hover {
+    border-radius: 3px;
+}
+
+.work-item:hover {
+    border-radius: 3px;
+}
+
+.contact-item {
+    transition: all 0.1s ease;
+    border-radius: 3px;
+}
+
+.contact-item:hover {
+    border-radius: 200px;
+}
+
 .selector-dot {
     width: 6px;
     height: 6px;
