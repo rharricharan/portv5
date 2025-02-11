@@ -24,6 +24,8 @@
       </div>
     </div>
 
+    <audio id="hoverSound" src="sounds/mechanical.wav"></audio>
+
     <!-- Cursor Object -->
     <div class="custom-cursor"><span class="cursor-text">(scroll)</span></div>
 
@@ -52,16 +54,17 @@
       </section>
       <div class="menu-selector">
         <div class="menu-links">
-          <a class="menu-link home-item" href="./index.html" data-text="you're here">
-            <h3>home</h3>
-          </a>
-          <a class="menu-link work-item" data-text="selected projects (4)">
+          <a class="menu-link home-item sound" href="./index.html" data-text="you're here">
+            <div class="selector-dot"></div>
             <h3>work</h3>
           </a>
-          <a class="menu-link exp-item" href="./graphic-design.html" data-text="work experience">
+          <a class="menu-link work-item sound" href="./graphic-design.html" data-text="graphic design work">
+            <h3>archive</h3>
+          </a>
+          <a class="menu-link exp-item sound" href="#" data-text="work experience">
             <h3>experience</h3>
           </a>
-          <a class="contact-link contact-item" data-text="open to full-time/freelance">
+          <a class="contact-link contact-item sound" data-text="open to full-time/freelance">
             <h3>let's talk</h3>
           </a>
         </div>
@@ -73,5 +76,6 @@
     <script src="./script.js" type="module"></script>
     <script src="./transition.js"></script>
     <script src="cursor.js"></script>
+    <script src="hoverSoundInteraction.js"></script>
   </body>
 </html>

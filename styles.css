@@ -201,6 +201,21 @@ section {
   position: absolute;
 }
 
+.home-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.selector-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* transition */
 .transition {
   position: fixed;
