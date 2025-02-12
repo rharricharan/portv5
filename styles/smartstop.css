@@ -156,6 +156,7 @@ p {
   font-family: 'Inter', sans-serif;
   text-align: left;
   display: inline;
+  letter-spacing: -1px;
 }
 
 .title-decsiption-container {
