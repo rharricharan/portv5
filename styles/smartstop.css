@@ -57,8 +57,7 @@ span {
 }
 
 .project-tags {
-    display: flex;
-    flex-direction: column;
+    display: inline;
     gap: 6px;
     justify-content: center;
 }
@@ -101,6 +100,7 @@ span {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
 }
 
 .overall span {
@@ -355,8 +355,79 @@ svg {
   .menu-text {
     transition: all 0.2s ease;
   }
-  
-  @media (max-width: 1024px) {
+
+  /* accordion */
+
+.accordion {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 6px;
+    padding: 6px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion li label::before {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion li::before {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 6px;
+    line-height: 140%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease
+}
+
+.accordion input[type='radio']:checked + li::before {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    height: 200px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.accordion input[type="radio"]:checked + li + label::before {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1024px) {
     .custom-cursor {
       display: none !important;
     }
