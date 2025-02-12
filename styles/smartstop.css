@@ -68,7 +68,7 @@ span {
 
 .work-container {
     width: 100vw;
-    height: 900vh;
+    height: calc(10 * 100vh);
     display: flex;
     flex-direction: row;
     overflow-x: none;
@@ -120,32 +120,23 @@ span {
 }
 
 .project-showcase {
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
     overflow-x: none;
-    flex: 1;
-    top: 16px;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: contain;
-    overflow-x: none;
-    gap: 16px;
     margin-left: auto;
-    width: calc(100vw - 25vw);
-    height: 100%;
+    gap: 16px;
+    width: 75vw;
 }
 
 img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     border-radius: 3px;
 }
