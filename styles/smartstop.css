@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -64,18 +68,23 @@ span {
 
 .work-container {
     width: 100vw;
-    height: 100vh;
-    position: fixed;
+    height: 900vh;
     display: flex;
     flex-direction: row;
+    overflow-x: none;
+    overflow-y: scroll;
 }
 
 .work-menu {
-    width: 40%;
-    height: 100%;
+    width: 25vw;
+    height: 100vh;
     padding: 48px 48px;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
 }
 
 .menu-container {
@@ -112,16 +121,33 @@ span {
 
 .project-showcase {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 16px;
-    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: none;
+    flex: 1;
+    top: 16px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: contain;
+    overflow-x: none;
+    gap: 16px;
+    margin-left: auto;
+    width: calc(100vw - 25vw);
+    height: 100%;
 }
 
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 3px;
 }
 
 .back-button {
