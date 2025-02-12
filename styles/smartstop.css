@@ -68,11 +68,12 @@ span {
 
 .work-container {
     width: 100vw;
-    height: calc(10 * 100vh);
+    height: auto;
     display: flex;
     flex-direction: row;
-    overflow-x: none;
-    overflow-y: scroll;
+    overflow: none;
+    position: relative;
+    padding: 16px;
 }
 
 .work-menu {
@@ -120,8 +121,6 @@ span {
 }
 
 .project-showcase {
-    height: 100%;
-    padding: 16px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -131,14 +130,14 @@ span {
     overflow-x: none;
     margin-left: auto;
     gap: 16px;
-    width: 75vw;
+    width: 70vw;
 }
 
 img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 .back-button {
