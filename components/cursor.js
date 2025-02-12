@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeItem = document.querySelectorAll(".home-item");
     const workItem = document.querySelectorAll(".work-item");
     const expItem = document.querySelectorAll(".exp-item");
-    const contactItem = document.querySelectorAll(".contact-item")
+    const contactItem = document.querySelectorAll(".contact-item");
+    const smartstopNext = document.querySelectorAll(".smartstop-item");
+    const backItem = document.querySelectorAll(".back-item");
 
     function isTouchDevice() {
         return window.innerWidth <= 1024 || "ontouchstart" in window;
@@ -116,6 +118,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         contactItem.addEventListener("mouseleave", () => {
+            updateCursorText("(scroll)");
+            gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(0, 0, 0, 1)" });
+        });
+    });
+
+    smartstopNext.forEach((smartstopNext) => {
+        smartstopNext.addEventListener("mouseenter", () => {
+            updateCursorText(smartstopNext.getAttribute("data-text"));
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "rgba(255, 255, 255, 1)" });
+        });
+
+        smartstopNext.addEventListener("mouseleave", () => {
+            updateCursorText("(scroll)");
+            gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(0, 0, 0, 1)" });
+        });
+    });
+
+    backItem.forEach((backItem) => {
+        backItem.addEventListener("mouseenter", () => {
+            updateCursorText(backItem.getAttribute("data-text"));
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "rgba(255, 255, 255, 1)" });
+        });
+
+        backItem.addEventListener("mouseleave", () => {
             updateCursorText("(scroll)");
             gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
             gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(0, 0, 0, 1)" });
