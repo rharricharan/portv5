@@ -219,7 +219,7 @@ span {
 
 .block {
     flex: 1;
-    background-color: #5642D7;
+    background-color: #000;
     transform: scaleY(1);
     will-change: transform;
     visibility: visible;
