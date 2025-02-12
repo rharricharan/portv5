@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contactItem.forEach((contactItem) => {
         contactItem.addEventListener("mouseenter", () => {
             updateCursorText(contactItem.getAttribute("data-text"));
-            gsap.to(cursor, { scale: 1.12, backgroundColor: "#11D238" });
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "#1B9941" });
             gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
         });
 
