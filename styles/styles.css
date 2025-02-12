@@ -226,7 +226,7 @@ section {
   display: flex;
   gap: 0;
   flex-direction: column;
-  z-index: 100;
+  z-index: 1000;
   pointer-events: none;
 }
 
