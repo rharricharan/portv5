@@ -496,4 +496,18 @@ span {
         width: 75%;
         height: 50%;
     }
+
+    .site-info {
+        position: absolute;
+        top: 50%;
+        left: 1.5em;
+        display: flex;
+        gap: 4px;
+        margin-left: 72px;
+        display: none;
+    }
+
+    .custom-cursor {
+        display: none !important;
+    }
 }
