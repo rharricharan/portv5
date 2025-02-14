@@ -232,7 +232,7 @@ svg {
     transform: translate(-50%);
     background-color: #161616;
     border-radius: 6px;
-    padding: 6px 6px;
+    padding: 6px;
   }
   
   .menu-link {

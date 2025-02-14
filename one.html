@@ -15,6 +15,7 @@
     <title>ryan harricharan | smartstop</title>
     <link rel="stylesheet" href="styles/one.css">
     <link rel="stylesheet" href="styles/smartstop.css">
+    <link rel="stylesheet" href="styles/work-menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -181,10 +182,60 @@
             <video src="assets/one/one.mp4" autoplay muted playsinline loop></video>
         </div>
         <div class="menu-selector">
+            <div class="work-selector">
+                <div class="product-selector">
+                    <span class="selector-title">product design</span>
+                    <a class="project-link sound project" data-text="select" href="smartstop.html">
+                        <span>smartstop</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>catchrays</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>ore®</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>arro®</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>ribbit</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>prospex</span>
+                    </a>
+                </div>
+                <div class="ux-selector">
+                    <span class="selector-title">user experience</span>
+                    <a class="project-link sound project" data-text="select">
+                        <span>cinnamon</span>
+                    </a>
+                    <a class="project-link selector-select select-item" data-text="you're here">
+                        <span>our next energy</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select" href="leadhack.html">
+                        <span>leadhack</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>halftone</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>gostrmarketing</span>
+                    </a>
+                    <a class="project-link sound project" data-text="select">
+                        <span>avé</span>
+                    </a>
+                </div>
+            </div>
             <div class="menu-links">
-                <a class="menu-link home-item sound" href="./index.html" data-text="you're here">
+                <a class="menu-link home-item sound" href="index.html" data-text="back where you started">
+                    <svg class="home-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.64645 2.56075C7.84171 2.36549 8.15829 2.36549 8.35355 2.56075L14.1464 8.35365C14.3417 8.54891 14.6583 8.54891 14.8536 8.35365C15.0488 8.15838 15.0488 7.8418 14.8536 7.64654L9.06066 1.85365C8.47487 1.26786 7.52513 1.26786 6.93934 1.85365L1.14645 7.64654C0.951184 7.8418 0.951184 8.15838 1.14645 8.35365C1.34171 8.54891 1.65829 8.54891 1.85355 8.35365L7.64645 2.56075Z" fill="white"/>
+                        <path d="M8 3.62141L13.4393 9.06075C13.4592 9.08057 13.4794 9.09971 13.5 9.11818V13.2501C13.5 13.9404 12.9404 14.5001 12.25 14.5001H10C9.72386 14.5001 9.5 14.2762 9.5 14.0001V11.0001C9.5 10.7239 9.27614 10.5001 9 10.5001H7C6.72386 10.5001 6.5 10.7239 6.5 11.0001V14.0001C6.5 14.2762 6.27614 14.5001 6 14.5001H3.75C3.05964 14.5001 2.5 13.9404 2.5 13.2501V9.11818C2.52062 9.09971 2.54085 9.08057 2.56066 9.06075L8 3.62141Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="menu-link all-item sound" id="work-item" data-text="you're here">
                     <div class="selector-dot"></div>
-                    <h3 class="menu-text" data-text="work">work</h3>
+                    <h3 class="menu-text" data-text="all work">all work</h3>
                 </a>
                 <a class="menu-link work-item sound" href="./graphic-design.html" data-text="graphic design work">
                     <h3 class="menu-text" data-text="archive">archive</h3>
@@ -212,6 +263,7 @@
     <script src="components/scrollBehavior.js"></script>
     <script src="components/script.js"></script>
     <script src="components/smoothScrolling.js"></script>
+    <script src="components/workMenu.js"></script>
 </body>
 
 </html>
