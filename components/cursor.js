@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactItem = document.querySelectorAll(".contact-item");
     const smartstopNext = document.querySelectorAll(".smartstop-item");
     const backItem = document.querySelectorAll(".back-item");
+    const selectItem = document.querySelectorAll(".select-item");
+    const all = document.querySelectorAll(".all-item");
 
     function isTouchDevice() {
         return window.innerWidth <= 1024 || "ontouchstart" in window;
@@ -71,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     homeItem.forEach((homeItem) => {
         homeItem.addEventListener("mouseenter", () => {
             updateCursorText(homeItem.getAttribute("data-text"));
-            gsap.to(cursor, { scale: 1.12, backgroundColor: "#0898FB" });
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "#A020F0" });
             gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
         });
 
@@ -147,6 +149,34 @@ document.addEventListener("DOMContentLoaded", () => {
             updateCursorText("(scroll)");
             gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
             gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(0, 0, 0, 1)" });
+        });
+    });
+
+    selectItem.forEach((selectItem) => {
+        selectItem.addEventListener("mouseenter", () => {
+            updateCursorText(selectItem.getAttribute("data-text"));
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "#0898FB" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
+        });
+
+        selectItem.addEventListener("mouseleave", () => {
+            updateCursorText("(scroll)");
+            gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
+        });
+    });
+
+    all.forEach((all) => {
+        all.addEventListener("mouseenter", () => {
+            updateCursorText(all.getAttribute("data-text"));
+            gsap.to(cursor, { scale: 1.12, backgroundColor: "#0898FB" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
+        });
+
+        all.addEventListener("mouseleave", () => {
+            updateCursorText("(scroll)");
+            gsap.to(cursor, { scale: 1, backgroundColor: "rgba(255, 255, 255, 0.5)" });
+            gsap.to(cursor.querySelector(".cursor-text"), { color: "rgba(255, 255, 255, 1)" });
         });
     });
 });
