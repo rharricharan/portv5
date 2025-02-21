@@ -505,6 +505,14 @@ video {
     display: none;
 }
 
+.soon {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.soon-title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 1024px) {
 
     .work-container {
