@@ -65,66 +65,6 @@ section {
   text-align: center;
 }
 
-.info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 1em;
-}
-
-.info > div {
-  flex: 1;
-}
-
-.link {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.link a {
-  padding: 0.35em;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-}
-
-.progress-bar {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  width: 2px;
-  height: 120px;
-  background-color: rgb(40, 40, 40);
-}
-
-.progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  z-index: 2;
-  background-color: #fff;
-}
-
-.img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.25);
-  width: 35%;
-  height: 70%;
-  z-index: -1;
-  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-}
-
-.img img {
-  filter: contrast(1) brightness(1);
-}
-
 .menu-links {
   display: flex;
   flex-direction: row;
@@ -195,14 +135,6 @@ section {
 
 .contact-link:hover h3 {
   color: rgba(0, 0, 0, 0.9);
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.09);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  position: absolute;
 }
 
 .selector-dot {
@@ -323,6 +255,158 @@ section {
 
 .mobile-home {
   display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e3db;
+  font-family: "Saans TRIAL";
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 0.9;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mobile-home {
+  display: block;
+  overflow-x: hidden;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 48px;
+}
+
+.mobile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.mobile-header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 8px;
+}
+
+.mobile-header-title p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Old Standard TT', serif;
+  font-size: 32px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+.mobile-header-title span {
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-align: left;
+  width: fit-content;
+}
+
+.header-description span {
+  padding: 0px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  text-align: left;
+  font-family: 'Old Standard TT', serif;
+  line-height: 120%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.list-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.list-product span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 140%;
+}
+
+.list-product-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.product .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.bottom-list {
+  margin-bottom: 146px;
 }
 
 @media (max-width: 1024px) {
