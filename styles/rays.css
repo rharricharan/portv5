@@ -523,6 +523,7 @@ video {
 
     .project-showcase {
         width: 100%;
+        height: auto;
     }
 
     .work-menu {
@@ -663,6 +664,37 @@ video {
         justify-content: center;
         align-items: center;
         padding: 8px;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .left-side-mobile-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .menu-links .home-item {
+        display: none;
+    }
+
+    .menu-links a {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
     }
 }
 

@@ -202,3 +202,10 @@
     border-radius: 200px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
+@media (max-width: 1024px) {
+    .work-selector {
+        width: 90%;
+        max-width: 400px;
+    }
+}
